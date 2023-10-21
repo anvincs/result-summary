@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 70%;
+  height: 70%;
+  border-radius: 20px;
+}
+
+.result {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  background: linear-gradient(
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%),
+    hsl(241, 81%, 54%)
+  );
+  padding: 30px;
+  gap: 10px;
+  border-radius: 20px;
+  color: white;
+}
+
+.circle {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(
+    hsl(241, 81%, 54%),
+    hsl(241, 81%, 54%),
+    hsl(252, 100%, 67%)
+  );
+}
+
+.stats {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.stats h2 {
+  color: hsl(224, 30%, 27%);
+}
+
+.stats button {
+  height: 40px;
+  width: 80%;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.stats button:hover {
+  background-color: hsl(241, 81%, 54%);
+}
+
+.stat {
+  width: 80%;
+  height: 35px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-between;
+  border-radius: 5px;
+}
+
+.category > img {
+  padding-right: 10px;
+  /* padding-top: 2px; */
+}
+
+.score h3 {
+  display: inline;
+}
+
+.denominator {
+  color: hsl(241, 100%, 89%);
+  font-weight: 700;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 10%);
+}
+
+.reaction-label {
+  color: hsl(0, 100%, 67%);
+  font-weight: 800;
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 10%);
+}
+
+.memory-label {
+  color: hsl(39, 100%, 56%);
+  font-weight: 800;
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 10%);
+}
+
+.verbal-label {
+  color: hsl(166, 100%, 37%);
+  font-weight: 800;
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 10%);
+}
+
+.visual-label {
+  color: hsl(234, 85%, 45%);
+  font-weight: 800;
+}
+
+@media screen and (width <= 750px) {
+  .wrapper {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    gap: 20px;
+  }
+  .result {
+    max-width: none;
+    width: 100%;
+  }
+  .stats {
+    width: 100%;
+    gap: 15px;
+  }
+}
+
+@media screen and (width > 900px) {
+  .wrapper {
+    box-shadow: 13px 12px 14px 1px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 13px 12px 14px 1px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 13px 12px 14px 1px rgba(0, 0, 0, 0.16);
+  }
+}
